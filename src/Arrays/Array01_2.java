@@ -15,10 +15,10 @@ import java.util.Scanner;
 
 public class Array01_2 {
 
-    public static int[] searchRange1(int[] nums, int target) {
 
-        /*执行用时：1 ms, 在所有 Java 提交中击败了 9.31% 的用户
-        内存消耗：44.4 MB, 在所有 Java 提交中击败了 80.46% 的用户*/
+    /*执行用时：1 ms, 在所有 Java 提交中击败了 9.31% 的用户
+    内存消耗：44.4 MB, 在所有 Java 提交中击败了 80.46% 的用户*/
+    public static int[] searchRange1(int[] nums, int target) {
 
         int[] range = new int[2];
         int sum = 0;
@@ -50,14 +50,51 @@ public class Array01_2 {
         return range;
     }
 
+
+    /* 执行用时：0 ms, 在所有 Java 提交中击败了100.00%的用户
+    内存消耗：45 MB, 在所有 Java 提交中击败了7.28%的用户*/
     public static int[] searchRange2(int[] nums, int target) {
 
+        int leftBorder = getLeftBorder(nums, target);
+        int rightBorder = getRightBorder(nums, target);
+        // 情况一
+        if (leftBorder == -2 || rightBorder == -2) return new int[]{-1, -1};
+        // 情况三
+        if (rightBorder - leftBorder > 1) return new int[]{leftBorder + 1, rightBorder - 1};
+        // 情况二
+        return new int[]{-1, -1};
+    }
 
+    public static int getRightBorder(int[] n, int tr) {
+        int left = 0;
+        int right = n.length - 1;
+        int rightBorder = -2; // 记录一下rightBorder没有被赋值的情况
+        while (left <= right) {
+            int middle = left + ((right - left) / 2);
+            if (n[middle] > tr) {
+                right = middle - 1;
+            } else { // 寻找右边界，nums[middle] == target的时候更新left
+                left = middle + 1;
+                rightBorder = left;
+            }
+        }
+        return rightBorder;
+    }
 
-        //没有找到target时，
-        nums[0] = -1;
-        nums[1] = -1;
-        return nums;
+    public static int getLeftBorder(int[] nums, int target) {
+        int left = 0;
+        int right = nums.length - 1;
+        int leftBorder = -2; // 记录一下leftBorder没有被赋值的情况
+        while (left <= right) {
+            int middle = left + ((right - left) / 2);
+            if (nums[middle] >= target) { // 寻找左边界，nums[middle] == target的时候更新right
+                right = middle - 1;
+                leftBorder = right;
+            } else {
+                left = middle + 1;
+            }
+        }
+        return leftBorder;
     }
 
     public static void main(String[] args) {
