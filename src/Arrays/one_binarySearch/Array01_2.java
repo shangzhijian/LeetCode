@@ -1,6 +1,8 @@
-package Arrays;
+package Arrays.one_binarySearch;
 
-/*给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。
+/*
+69.x 的平方根
+给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。
 
         如果数组中不存在目标值 target，返回 [-1, -1]。
 
@@ -57,11 +59,11 @@ public class Array01_2 {
 
         int leftBorder = getLeftBorder(nums, target);
         int rightBorder = getRightBorder(nums, target);
-        // 情况一
+        // 情况一target 在数组范围的右边或者左边，例如数组{3, 4, 5}，target为2或者数组{3, 4, 5},target为6，此时应该返回{-1, -1}
         if (leftBorder == -2 || rightBorder == -2) return new int[]{-1, -1};
-        // 情况三
+        // 情况三target 在数组范围中，且数组中存在target，例如数组{3,6,7},target为6，此时应该返回{1, 1}
         if (rightBorder - leftBorder > 1) return new int[]{leftBorder + 1, rightBorder - 1};
-        // 情况二
+        // 情况二target 在数组范围中，且数组中不存在target，例如数组{3,6,7},target为5，此时应该返回{-1, -1}
         return new int[]{-1, -1};
     }
 

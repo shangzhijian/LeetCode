@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.two_removeElement;
 
 import java.util.Arrays;
 import java.util.Scanner;

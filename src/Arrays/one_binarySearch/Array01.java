@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.one_binarySearch;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ import java.util.Scanner;
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。*/
 public class Array01 {
 
-    public static int binarySearch(int arr[], int target) {
+    public static int binarySearch(int[] arr, int target) {
 
         //1设置区间，区间方式为闭区间[]
         int left = 0;
@@ -41,7 +41,7 @@ public class Array01 {
         }
     }
 
-    public static int binarySearch2(int arr[] ,int target) {
+    public static int binarySearch2(int[] arr ,int target) {
 
         //1.定义左右区间，
         int left = 0;
@@ -70,7 +70,7 @@ public class Array01 {
 
     public static void main(String[] args) {
 
-        int nums[] = new int[]{-1,0,3,5,9,12};
+        int[] nums = new int[]{-1,0,3,5,9,12};
         System.out.println("请输入target");
         Scanner sc = new Scanner(System.in);
         int target = sc.nextInt();
