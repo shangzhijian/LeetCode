@@ -41,6 +41,23 @@ public class Array01_Test01 {
         }
     }
 
+    public static int search2() {
+        int[] nums = {-1, 0, 3, 5, 9, 12};
+        System.out.println("target = ");
+        Scanner sc = new Scanner(System.in);
+        int target = sc.nextInt();
+
+        int left = 0;
+        int right = nums.length - 1;
+        int middle = (left + right) / 2;
+        //2分法：前闭后开
+        while (true) {
+            if (nums[middle] < target) {
+                right = middle;
+            }
+        }
+    }
+
     //方法一：假设目标在闭区间内
     //[-1,0,3,5,9,12]
     public static void main(String[] args) {
