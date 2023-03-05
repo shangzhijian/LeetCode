@@ -49,7 +49,39 @@ public class Array01_Test02 {
         //4 打印结果
     }
 
+    //前闭后开区间
+    public static int search2() {
+        //1 创建测试案例
+        int[] nums = {-1, 0, 3, 5, 9, 12};
+        System.out.println("target = ");
+        Scanner sc = new Scanner(System.in);
+        int target = sc.nextInt();
+
+        int left = 0;
+        int right = nums.length - 1;
+        int middle = (left + right) / 2;
+        //2 开区间进行二分法查找
+        while (true) {
+            if (nums[middle] < target) {
+                left = middle + 1;
+            }
+            if (nums[middle] > target) {
+                right = middle;
+            }
+            if (nums[middle] == target) {
+                return middle;
+            }
+            middle = (left + right) / 2;
+            if (middle < left || middle > right) {
+                return -1;
+            }
+        }
+    }
+
+
+
     public static void main(String[] args) {
         System.out.println(search1());
+        System.out.println(search2());
     }
 }
