@@ -13,7 +13,7 @@ package Arrays.one_binarySearch;
 
 import java.util.Scanner;
 
-public class Array01_4 {
+public class Array05 {
 
     public static boolean mySqrt(int num) {
 

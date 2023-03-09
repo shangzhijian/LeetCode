@@ -15,7 +15,7 @@ package Arrays.one_binarySearch;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Array01_2 {
+public class Array03 {
 
 
     /*执行用时：1 ms, 在所有 Java 提交中击败了 9.31% 的用户

@@ -13,16 +13,16 @@ import java.util.Scanner;
         来源：力扣（LeetCode）
         链接：https://leetcode.cn/problems/search-insert-position
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。*/
-public class Array01_1 {
+public class Array02 {
 
     public static int function1 (int[] nums, int target) {
         for (int i = 0 ; i < nums.length ; i++) {
                 if (target <= nums[i]) {
                         return i;
-                    }
-            }
-            return nums.length;
+                }
         }
+        return nums.length;
+    }
 
     public static int function2 (int[] nums, int target) {
 

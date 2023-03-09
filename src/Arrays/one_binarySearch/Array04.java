@@ -12,7 +12,7 @@ import java.util.Scanner;
         来源：力扣（LeetCode）
         链接：https://leetcode.cn/problems/sqrtx
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。*/
-public class Array01_3 {
+public class Array04 {
 
     public  static long  mySqrt(int x) {
 
