@@ -2,7 +2,9 @@ package Arrays.one_binarySearch;
 
 import java.util.Scanner;
 
-/*给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，
+/*
+69.x 的平方根
+给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，
 写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
 
 二分法：前提条件，有序且不重复
@@ -41,22 +43,6 @@ public class Array01_Test01 {
         }
     }
 
-    public static int search2() {
-        int[] nums = {-1, 0, 3, 5, 9, 12};
-        System.out.println("target = ");
-        Scanner sc = new Scanner(System.in);
-        int target = sc.nextInt();
-
-        int left = 0;
-        int right = nums.length - 1;
-        int middle = (left + right) / 2;
-        //2分法：前闭后开
-        while (true) {
-            if (nums[middle] < target) {
-                right = middle;
-            }
-        }
-    }
 
     //方法一：假设目标在闭区间内
     //[-1,0,3,5,9,12]
