@@ -1,4 +1,4 @@
-package Arrays.one_binarySearch;
+package Arrays.B_removeElement;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ import java.util.Scanner;
 链接：https://leetcode.cn/problems/remove-element
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
-public class Array04 {
+public class Array01_Test02 {
 
     public  static long  mySqrt(int x) {
 

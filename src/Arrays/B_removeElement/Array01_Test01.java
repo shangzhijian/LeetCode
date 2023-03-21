@@ -1,4 +1,4 @@
-package Arrays.one_binarySearch;
+package Arrays.B_removeElement;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -19,7 +19,7 @@ import java.util.Scanner;
 链接：https://leetcode.cn/problems/remove-element
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
-public class Array04_Test01 {
+public class Array01_Test01 {
 
     public static int removeElement(int[] nums, int val) {
         int left = 0;

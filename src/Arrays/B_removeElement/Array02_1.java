@@ -1,4 +1,4 @@
-package Arrays.two_removeElement;
+package Arrays.B_removeElement;
 
 /*
 * 26.删除排序数组中的重复项
@@ -22,8 +22,6 @@ package Arrays.two_removeElement;
 链接：https://leetcode.cn/problems/remove-duplicates-from-sorted-array
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  * */
-
-import java.util.Arrays;
 
 public class Array02_1 {
 
