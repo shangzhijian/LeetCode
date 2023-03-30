@@ -1,4 +1,4 @@
-package Arrays.B_removeElement;
+package Arrays.B_removeElement.Test;
 
 import java.util.Arrays;
 import java.util.Scanner;

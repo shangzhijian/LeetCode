@@ -1,4 +1,4 @@
-package Arrays.A_binarySearch;
+package Arrays.A_binarySearch.Test;
 
 import java.util.Scanner;
 

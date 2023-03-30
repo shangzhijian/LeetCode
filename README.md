@@ -1,6 +1,6 @@
 # LeetCode练习题目仓库
 
-题目在src目录下
+注意：**题目在`LeetCode\src\Arrays`目录下**
 
 # Arrays---数组练习
 
@@ -23,6 +23,8 @@
 ## C_square
 
 > 1. [977. 有序数组的平方 - 力扣（LeetCode）](https://leetcode.cn/problems/squares-of-a-sorted-array/)
+>    - 双指针法，重点在于理解为什么用这个，
+>    - 两边往中间靠拢，大的从两边取值，保存到新数组时，从后往前排
 
 ## D_minLengthArray
 

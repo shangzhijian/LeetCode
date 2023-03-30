@@ -1,4 +1,4 @@
-package Arrays.A_binarySearch;
+package Arrays.A_binarySearch.Test;
 /*
 704. 二分查找
 给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，
