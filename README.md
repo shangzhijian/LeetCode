@@ -34,3 +34,7 @@
 >      - 持续改变窗口大小whlie的作用
 > 2. 
 
+## E_SpiralMatrix
+
+> 1. [螺旋矩阵](https://leetcode.cn/problems/spiral-matrix-ii/)
+>    - 循环不变量，在于边界转圈时的拐点确定，前闭后开原则
