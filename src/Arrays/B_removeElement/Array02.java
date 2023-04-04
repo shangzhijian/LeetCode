@@ -23,7 +23,7 @@ package Arrays.B_removeElement;
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  * */
 
-public class Array02_1 {
+public class Array02 {
 
 
     /*执行用时：0 ms, 在所有 Java 提交中击败了100.00%的用户

@@ -11,7 +11,7 @@ package Arrays.B_removeElement;
 
 import java.util.Arrays;
 
-public class Array02_2 {
+public class Array03 {
 
     public static void moveZeroes(int[] nums) {
         //双指针法判断

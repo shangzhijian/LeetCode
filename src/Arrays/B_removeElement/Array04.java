@@ -9,7 +9,7 @@ package Arrays.B_removeElement;
         链接：https://leetcode.cn/problems/backspace-string-compare
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。*/
 
-public class Array02_3 {
+public class Array04 {
     public static boolean backspaceCompare(String s, String t) {
 
         int skips = 0;
